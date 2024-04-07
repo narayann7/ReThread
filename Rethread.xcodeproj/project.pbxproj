@@ -54,6 +54,7 @@
 		8B90FBD02BC27ED5002AB241 = {
 			isa = PBXGroup;
 			children = (
+				8B90FBFF2BC2A4FF002AB241 /* LearningLogs */,
 				8B90FBDB2BC27ED5002AB241 /* Rethread */,
 				8B90FBDA2BC27ED5002AB241 /* Products */,
 			);
@@ -70,7 +71,6 @@
 		8B90FBDB2BC27ED5002AB241 /* Rethread */ = {
 			isa = PBXGroup;
 			children = (
-				8B90FBFF2BC2A4FF002AB241 /* LeaningLogs */,
 				8B90FBF22BC29EEC002AB241 /* Info.plist */,
 				8B90FBDC2BC27ED5002AB241 /* RethreadApp.swift */,
 				8B90FBE02BC27ED6002AB241 /* Assets.xcassets */,
@@ -136,12 +136,12 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		8B90FBFF2BC2A4FF002AB241 /* LeaningLogs */ = {
+		8B90FBFF2BC2A4FF002AB241 /* LearningLogs */ = {
 			isa = PBXGroup;
 			children = (
 				8B90FC002BC2A52E002AB241 /* day1.md */,
 			);
-			path = LeaningLogs;
+			path = LearningLogs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

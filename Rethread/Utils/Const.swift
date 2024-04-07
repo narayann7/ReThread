@@ -1,5 +1,5 @@
 //
-//  Consts.swift
+//  Const.swift
 //  Rethread
 //
 //  Created by narayan on 07/04/24.
@@ -10,6 +10,6 @@ import SwiftUI
 
 class AppColours {
     static var primary: Color = Color("primary")
-    static var primaryText: Color = Color(.systemBackground)
+    static var primaryBackground: Color = Color(.systemBackground)
     static var grey6: Color = Color(.systemGray6)
 }

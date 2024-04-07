@@ -1,0 +1,6 @@
+- file and folder structure 
+- how to use custom fonts and making it default to a single view
+- adding image and colours, and change according to light and dark mode
+- how to use custom modifiers
+- Swift ui view like text, button, Navigation stacks, Image etc
+- 

@@ -19,12 +19,22 @@ struct RootViewModifier : ViewModifier {
 
 //text button modifiers
 
-struct FlatButtonText : ViewModifier {
+struct FlatButtonTextModifier : ViewModifier {
     func body(content: Content) -> some View {
         content.frame(maxWidth: .infinity,maxHeight: 40)
             .background(AppColours.primary)
-            .foregroundColor(AppColours.primaryText)
+            .foregroundColor(AppColours.primaryBackground)
             .cornerRadius(10)
             .fontWeight(.semibold)
+    }
+}
+
+
+
+
+//text field modifiers
+struct AuthTextFieldModifier : ViewModifier {
+    func body(content: Content) -> some View {
+        content.padding(14).background(AppColours.grey6).cornerRadius(10)
     }
 }
