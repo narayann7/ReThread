@@ -8,17 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		8B90FBDD2BC27ED5002AB241 /* RethreadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B90FBDC2BC27ED5002AB241 /* RethreadApp.swift */; };
-		8B90FBDF2BC27ED5002AB241 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B90FBDE2BC27ED5002AB241 /* ContentView.swift */; };
 		8B90FBE12BC27ED6002AB241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B90FBE02BC27ED6002AB241 /* Assets.xcassets */; };
 		8B90FBE42BC27ED6002AB241 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B90FBE32BC27ED6002AB241 /* Preview Assets.xcassets */; };
+		8B90FBEE2BC28386002AB241 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B90FBED2BC28386002AB241 /* SignIn.swift */; };
+		8B90FBF12BC29E90002AB241 /* Sen-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B90FBF02BC29E8F002AB241 /* Sen-Medium.ttf */; };
+		8B90FBF72BC29F73002AB241 /* Sen-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B90FBF32BC29F73002AB241 /* Sen-SemiBold.ttf */; };
+		8B90FBF82BC29F73002AB241 /* Sen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B90FBF42BC29F73002AB241 /* Sen-Regular.ttf */; };
+		8B90FBF92BC29F73002AB241 /* Sen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B90FBF52BC29F73002AB241 /* Sen-Bold.ttf */; };
+		8B90FBFA2BC29F73002AB241 /* Sen-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B90FBF62BC29F73002AB241 /* Sen-ExtraBold.ttf */; };
+		8B90FBFE2BC2A40C002AB241 /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B90FBFD2BC2A40C002AB241 /* Modifier.swift */; };
+		8B90FC012BC2A52E002AB241 /* day1.md in Resources */ = {isa = PBXBuildFile; fileRef = 8B90FC002BC2A52E002AB241 /* day1.md */; };
+		8B90FC032BC2AAB1002AB241 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B90FC022BC2AAB1002AB241 /* Const.swift */; };
+		8B90FC052BC2B360002AB241 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B90FC042BC2B360002AB241 /* SignUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B90FBD92BC27ED5002AB241 /* Rethread.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rethread.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B90FBDC2BC27ED5002AB241 /* RethreadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RethreadApp.swift; sourceTree = "<group>"; };
-		8B90FBDE2BC27ED5002AB241 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B90FBE02BC27ED6002AB241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B90FBE32BC27ED6002AB241 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B90FBED2BC28386002AB241 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		8B90FBF02BC29E8F002AB241 /* Sen-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sen-Medium.ttf"; sourceTree = "<group>"; };
+		8B90FBF22BC29EEC002AB241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8B90FBF32BC29F73002AB241 /* Sen-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sen-SemiBold.ttf"; sourceTree = "<group>"; };
+		8B90FBF42BC29F73002AB241 /* Sen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sen-Regular.ttf"; sourceTree = "<group>"; };
+		8B90FBF52BC29F73002AB241 /* Sen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sen-Bold.ttf"; sourceTree = "<group>"; };
+		8B90FBF62BC29F73002AB241 /* Sen-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sen-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8B90FBFD2BC2A40C002AB241 /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
+		8B90FC002BC2A52E002AB241 /* day1.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = day1.md; sourceTree = "<group>"; };
+		8B90FC022BC2AAB1002AB241 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		8B90FC042BC2B360002AB241 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +70,14 @@
 		8B90FBDB2BC27ED5002AB241 /* Rethread */ = {
 			isa = PBXGroup;
 			children = (
+				8B90FBFF2BC2A4FF002AB241 /* LeaningLogs */,
+				8B90FBF22BC29EEC002AB241 /* Info.plist */,
 				8B90FBDC2BC27ED5002AB241 /* RethreadApp.swift */,
-				8B90FBDE2BC27ED5002AB241 /* ContentView.swift */,
 				8B90FBE02BC27ED6002AB241 /* Assets.xcassets */,
+				8B90FBEC2BC2835B002AB241 /* Core */,
+				8B90FBEF2BC29E7B002AB241 /* Fonts */,
 				8B90FBE22BC27ED6002AB241 /* Preview Content */,
+				8B90FBFB2BC2A349002AB241 /* Utils */,
 			);
 			path = Rethread;
 			sourceTree = "<group>";
@@ -65,6 +88,60 @@
 				8B90FBE32BC27ED6002AB241 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B90FBEA2BC280C0002AB241 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8B90FBEB2BC28339002AB241 /* Viiews */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		8B90FBEB2BC28339002AB241 /* Viiews */ = {
+			isa = PBXGroup;
+			children = (
+				8B90FBED2BC28386002AB241 /* SignIn.swift */,
+				8B90FC042BC2B360002AB241 /* SignUp.swift */,
+			);
+			path = Viiews;
+			sourceTree = "<group>";
+		};
+		8B90FBEC2BC2835B002AB241 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8B90FBEA2BC280C0002AB241 /* Auth */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8B90FBEF2BC29E7B002AB241 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8B90FBF52BC29F73002AB241 /* Sen-Bold.ttf */,
+				8B90FBF62BC29F73002AB241 /* Sen-ExtraBold.ttf */,
+				8B90FBF42BC29F73002AB241 /* Sen-Regular.ttf */,
+				8B90FBF32BC29F73002AB241 /* Sen-SemiBold.ttf */,
+				8B90FBF02BC29E8F002AB241 /* Sen-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8B90FBFB2BC2A349002AB241 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8B90FBFD2BC2A40C002AB241 /* Modifier.swift */,
+				8B90FC022BC2AAB1002AB241 /* Const.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8B90FBFF2BC2A4FF002AB241 /* LeaningLogs */ = {
+			isa = PBXGroup;
+			children = (
+				8B90FC002BC2A52E002AB241 /* day1.md */,
+			);
+			path = LeaningLogs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +202,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B90FBF82BC29F73002AB241 /* Sen-Regular.ttf in Resources */,
 				8B90FBE42BC27ED6002AB241 /* Preview Assets.xcassets in Resources */,
+				8B90FBF12BC29E90002AB241 /* Sen-Medium.ttf in Resources */,
+				8B90FBF72BC29F73002AB241 /* Sen-SemiBold.ttf in Resources */,
+				8B90FBFA2BC29F73002AB241 /* Sen-ExtraBold.ttf in Resources */,
+				8B90FC012BC2A52E002AB241 /* day1.md in Resources */,
+				8B90FBF92BC29F73002AB241 /* Sen-Bold.ttf in Resources */,
 				8B90FBE12BC27ED6002AB241 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B90FBDF2BC27ED5002AB241 /* ContentView.swift in Sources */,
+				8B90FBFE2BC2A40C002AB241 /* Modifier.swift in Sources */,
+				8B90FC052BC2B360002AB241 /* SignUp.swift in Sources */,
+				8B90FC032BC2AAB1002AB241 /* Const.swift in Sources */,
+				8B90FBEE2BC28386002AB241 /* SignIn.swift in Sources */,
 				8B90FBDD2BC27ED5002AB241 /* RethreadApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +361,7 @@
 				DEVELOPMENT_TEAM = 6D953CVVXM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rethread/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +391,7 @@
 				DEVELOPMENT_TEAM = 6D953CVVXM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rethread/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
