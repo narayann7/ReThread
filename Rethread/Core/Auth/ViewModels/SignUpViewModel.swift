@@ -14,7 +14,10 @@ class SignUpViewModel: ObservableObject {
     @Published var userNameText: String = ""
     @Published var isLoading: Bool = false
 
+    @MainActor
     func createUser() async {
+        isLoading=true
         try? await AuthService.shared.signUp(email: emailText, password: passwordText, name: nameText, username: userNameText)
+        isLoading=false
     }
 }

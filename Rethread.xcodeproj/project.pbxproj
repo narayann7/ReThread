@@ -12,6 +12,7 @@
 		8B08B9D52BCBD46000C07995 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B08B9D42BCBD46000C07995 /* SignUpViewModel.swift */; };
 		8B08B9DA2BCBEC0F00C07995 /* FeedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B08B9D92BCBEC0F00C07995 /* FeedScreen.swift */; };
 		8B08B9DC2BCBFABD00C07995 /* Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B08B9DB2BCBFABD00C07995 /* Init.swift */; };
+		8B08B9DF2BCC455600C07995 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B08B9DE2BCC455500C07995 /* AppTextField.swift */; };
 		8B90FBDD2BC27ED5002AB241 /* RethreadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B90FBDC2BC27ED5002AB241 /* RethreadApp.swift */; };
 		8B90FBE12BC27ED6002AB241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B90FBE02BC27ED6002AB241 /* Assets.xcassets */; };
 		8B90FBE42BC27ED6002AB241 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B90FBE32BC27ED6002AB241 /* Preview Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		8B08B9D42BCBD46000C07995 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		8B08B9D92BCBEC0F00C07995 /* FeedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedScreen.swift; sourceTree = "<group>"; };
 		8B08B9DB2BCBFABD00C07995 /* Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Init.swift; sourceTree = "<group>"; };
+		8B08B9DE2BCC455500C07995 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
 		8B90FBD92BC27ED5002AB241 /* Rethread.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rethread.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B90FBDC2BC27ED5002AB241 /* RethreadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RethreadApp.swift; sourceTree = "<group>"; };
 		8B90FBE02BC27ED6002AB241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8B08B9DD2BCC451B00C07995 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8B08B9DE2BCC455500C07995 /* AppTextField.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		8B90FBD02BC27ED5002AB241 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +146,7 @@
 		8B90FBDB2BC27ED5002AB241 /* Rethread */ = {
 			isa = PBXGroup;
 			children = (
+				8B08B9DD2BCC451B00C07995 /* CustomViews */,
 				8B08B9CE2BCBC57A00C07995 /* Services */,
 				8B90FBF22BC29EEC002AB241 /* Info.plist */,
 				8B90FBDC2BC27ED5002AB241 /* RethreadApp.swift */,
@@ -302,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B08B9DF2BCC455600C07995 /* AppTextField.swift in Sources */,
 				8B90FBFE2BC2A40C002AB241 /* Modifier.swift in Sources */,
 				8B08B9DC2BCBFABD00C07995 /* Init.swift in Sources */,
 				8B08B9DA2BCBEC0F00C07995 /* FeedScreen.swift in Sources */,

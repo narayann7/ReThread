@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 class AppColours {
-    static var primary: Color = Color("app_primary")
-    static var primaryBackground: Color = Color(.systemBackground)
-    static var grey6: Color = Color(.systemGray6)
+    static var primary: Color = .init("app_primary")
+    static var primaryBackground: Color = .init(.systemBackground)
+    static var grey6: Color = .init(.systemGray6)
 }

@@ -19,8 +19,8 @@ struct SignIn: View {
                     content: {
                         Image("rethread-icon").resizable().scaledToFit().frame(width: 150)
                         Spacer().frame(height: 10)
-                        TextField("Enter your email", text: $signInViewModel.emailText).autocapitalization(.none).modifier(AuthTextFieldModifier())
-                        SecureField("Enter your password", text: $signInViewModel.passwordText).modifier(AuthTextFieldModifier())
+                        TextField("Enter your email", text: $signInViewModel.emailText).autocapitalization(.none).modifier(AuthTextFieldModifier()).disabled(signInViewModel.isLoading)
+                        SecureField("Enter your password", text: $signInViewModel.passwordText).modifier(AuthTextFieldModifier()).disabled(signInViewModel.isLoading)
                         Text("Forgot password?").frame(maxWidth: .infinity, alignment: .trailing)
                         Button {
                             Task {
@@ -28,8 +28,14 @@ struct SignIn: View {
                             }
 
                         } label: {
-                            Text("Login").modifier(FlatButtonTextModifier())
-                        }
+                            if signInViewModel.isLoading {
+                                ProgressView()
+                                    .modifier(AppProgressViewModifier())
+                            } else {
+                                Text("Login").modifier(FlatButtonTextModifier())
+                            }
+
+                        }.modifier(LongButtonModifier())
                     })
                 Spacer()
                 Divider()

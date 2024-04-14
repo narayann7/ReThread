@@ -31,4 +31,10 @@ class AuthService {
             print(error.localizedDescription)
         }
     }
+
+    func logout() async throws {
+        try Auth.auth().signOut()
+    }
+
+    var authUserListener: (@escaping (Auth, User?) -> Void) -> AuthStateDidChangeListenerHandle = Auth.auth().addStateDidChangeListener
 }

@@ -14,6 +14,8 @@ class SignInViewModel: ObservableObject {
 
     @MainActor
     func signInUser() async {
+        isLoading = true
         try? await AuthService.shared.signIn(email: emailText, password: passwordText)
+        isLoading = false
     }
 }

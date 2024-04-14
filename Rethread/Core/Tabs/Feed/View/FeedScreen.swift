@@ -9,7 +9,13 @@ import SwiftUI
 
 struct FeedScreen: View {
     var body: some View {
-        Text( "feed screen")
+        Button {
+            Task {
+                try? await AuthService.shared.logout()
+            }
+        } label: {
+            Text("Logout")
+        }
     }
 }
 

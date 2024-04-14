@@ -20,18 +20,41 @@ struct SignUp: View {
                 content: {
                     Image("rethread-icon").resizable().scaledToFit().frame(width: 150, height: 150)
                     Spacer().frame(height: 10)
-                    TextField("Enter your email", text: $signUpViewModel.emailText).autocapitalization(.none).modifier(AuthTextFieldModifier())
-                    SecureField("Enter your password", text: $signUpViewModel.passwordText).modifier(AuthTextFieldModifier())
-                    TextField("Enter your user name", text: $signUpViewModel.userNameText).modifier(AuthTextFieldModifier())
-                    TextField("Enter your name", text: $signUpViewModel.nameText).modifier(AuthTextFieldModifier())
+
+                    TextField("Enter your email", text: $signUpViewModel.emailText)
+                        .autocapitalization(.none)
+                        .modifier(AuthTextFieldModifier())
+                        .disabled(signUpViewModel.isLoading)
+
+                    SecureField("Enter your password", text: $signUpViewModel.passwordText)
+                        .modifier(AuthTextFieldModifier())
+                        .disabled(signUpViewModel.isLoading)
+
+                    TextField("Enter your user name", text: $signUpViewModel.userNameText)
+                        .modifier(AuthTextFieldModifier())
+                        .disabled(signUpViewModel.isLoading)
+
+                    TextField("Enter your name", text: $signUpViewModel.nameText)
+                        .modifier(AuthTextFieldModifier())
+                        .disabled(signUpViewModel.isLoading)
+
                     Spacer().frame(height: 30)
+
                     Button {
                         Task {
                             await signUpViewModel.createUser()
                         }
+
                     } label: {
-                        Text("Sign Up").modifier(FlatButtonTextModifier())
-                    }
+                        if signUpViewModel.isLoading {
+                            ProgressView()
+                                .modifier(AppProgressViewModifier())
+                        } else {
+                            Text("Sign Up").modifier(FlatButtonTextModifier())
+                        }
+
+                    }.modifier(LongButtonModifier())
+
                 })
             Spacer()
             Divider()

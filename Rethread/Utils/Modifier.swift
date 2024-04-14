@@ -15,16 +15,19 @@ struct RootViewModifier: ViewModifier {
 }
 
 // text button modifiers
-
 struct FlatButtonTextModifier: ViewModifier {
     func body(content: Content) -> some View {
-        content.frame(
-            width: .infinity, height: 40
-        ).frame(maxWidth: .infinity)
-            .background(AppColours.primary)
+        content
+            .frame(maxWidth: .infinity, maxHeight: 40)
             .foregroundColor(AppColours.primaryBackground)
-            .cornerRadius(10)
             .fontWeight(.semibold)
+    }
+}
+
+struct LongButtonModifier :ViewModifier{
+    func body(content: Content) -> some View {
+        content.frame(maxWidth: .infinity, maxHeight: 40).frame(height: 40)
+            .background(.white).cornerRadius(10)
     }
 }
 
@@ -32,5 +35,12 @@ struct FlatButtonTextModifier: ViewModifier {
 struct AuthTextFieldModifier: ViewModifier {
     func body(content: Content) -> some View {
         content.padding(14).background(AppColours.grey6).cornerRadius(10)
+    }
+}
+
+struct AppProgressViewModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content.progressViewStyle(CircularProgressViewStyle(tint: AppColours.primaryBackground))
+            .scaleEffect(1.5, anchor: .center)
     }
 }
